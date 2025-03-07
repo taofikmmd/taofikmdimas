@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="materi4contoh1.MainController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtUsername" layoutX="55.0" layoutY="62.0" />
+            <Label layoutX="55.0" layoutY="44.0" text="Username" />
+            <Label layoutX="57.0" layoutY="108.0" text="Password" />
+            <TextField fx:id="txtPassword" layoutX="55.0" layoutY="125.0" />
+            <TextField fx:id="txtFullname" layoutX="55.0" layoutY="188.0" />
+            <Label layoutX="55.0" layoutY="171.0" text="Fullname" />
+            <Button fx:id="btnAdd" layoutX="40.0" layoutY="234.0" mnemonicParsing="false" onAction="#addUser" text="Add" />
+            <Button fx:id="btnDelete" layoutX="104.0" layoutY="294.0" mnemonicParsing="false" onAction="#deleteUser" text="Delete" />
+            <Button fx:id="btnUpdate" layoutX="166.0" layoutY="234.0" mnemonicParsing="false" onAction="#updateUser" text="Update" />
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tblUsers" layoutX="74.0" layoutY="62.0" prefHeight="300.0" prefWidth="400.0">
+              <columns>
+                <TableColumn fx:id="colUsername" prefWidth="141.99996948242188" text="Username" />
+                <TableColumn fx:id="colPassword" prefWidth="131.33331298828125" text="Password" />
+                  <TableColumn fx:id="colFullname" prefWidth="125.33331298828125" text="Fullname" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
